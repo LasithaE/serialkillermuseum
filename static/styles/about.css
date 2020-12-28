@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+}
+.btns1{
+    background-color:#bb0a1e;
+    width: 5.7vw;
+    height: 4.2vh;
+    font-family: 'Special Elite', cursive;
+    color: white;
+    text-align: center;
+    font-size:2.5vh;
+    position: absolute;
+    left: 82vw;
+    top:5vh;
+    border-style: solid;
+    border-color:#bb0a1e ;
+    border-radius: 4vh;
+}
+.btns2{
+    background-color:#bb0a1e;
+    width: 5.7vw;
+    height: 4.2vh;
+    font-family: 'Special Elite', cursive;
+    color: white;
+    text-align: center;
+    font-size: 2.5vh;
+    position: absolute;
+    left: 90vw;
+    top:5vh;
+    border-style: solid;
+    border-color:#bb0a1e ;
+    border-radius: 4vh;
+}
+.title1{
+    font-family: 'Special Elite', cursive;
+    color:honeydew;
+    margin: auto;
+    margin: auto;
+    position: absolute;
+    left: 30vw;
+    top: 20vh;
+    font-size: 8vh;
+    font-weight: 100;
+}
+.para{
+    font-family: 'Special Elite', cursive;
+    color:honeydew; 
+    display: block;
+    margin: auto;
+    margin: auto;
+    position: absolute;
+    font-size: 3vh;
+    text-align: center;
+    font-weight: 70;
+    left: 20vw;
+    right: 20vw;
+    top: 40vh;
+}
+.thanks{
+    font-family: 'Special Elite', cursive;
+    color:honeydew; 
+    display: block;
+    margin: auto;
+    margin: auto;
+    position: absolute;
+    font-size: 5vh;
+    text-align: center;
+    font-weight: 100;
+    left: 20vw;
+    right: 20vw;
+    top: 63vh;
+}
+
+
+.githublink{
+    margin: auto;
+    margin: auto;
+    position: absolute;
+    left: 16vw;
+    right: 20vw;
+}
+.linkedinlink{
+    margin: auto;
+    margin: auto;
+    position: absolute;
+    left: 24vw;
+    right: 20vw;
+}
+
+.fa_custom_github{
+    color:#fff;
+    margin: auto;
+    margin: auto;
+    position: absolute;
+    font-size:6vh;
+    text-align: center;
+    font-weight: 100;
+    left: 16vw;
+    right: 20vw;
+    top: 72vh;
+}
+.fa_custom_linkedin{
+    color:#fff;
+    font-size:48px;
+    margin: auto;
+    margin: auto;
+    position: absolute;
+    font-size: 6vh;
+    text-align: center;
+    font-weight: 100;
+    left: 24vw;
+    right: 20vw;
+    top: 72vh;
+} 
+a {
+    color: white;
+    text-decoration: none;
+  }

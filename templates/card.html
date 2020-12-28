@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang=”en”>
+  <head>
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/card.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <title>Webscraper in Python using Flask</title>
+  </head>
+ <body> 
+    <button type="home" class="btns1"><a href="{{ url_for('index') }}">Home</a></button>
+    <button type="about" class="btns2"><a href="{{ url_for('about') }}">About</a></button>
+    <h2 class="title1">Serial Killer Museum.</h2>
+    <div class="card1" method="POST" action="{{ url_for('test') }}">
+      {%for i in range(0, len)%} 
+      <div class="card-container">
+        <div class="float-layout">
+          <div class="card-image">
+            {%if imgs[i]!=''%}
+              <img src={{imgs[i]}} >
+            {%elif imgs[i]==''%}
+              <img src={{url_for('static', filename='nophoto.png')}}  >
+              {%endif%}
+          <div class="card">
+            <div class="card-title">{{data[i].rsplit(':')[0]}}</div>
+            <div class="card-desc">
+              <p class="card-text">{{data[i].rsplit(':')[1].capitalize()}}</p>
+              <button type="submit"  class="btn-primary"><a href={{ links[i] }}>Know more</a></button>
+            </div>
+        
+          </div>  
+          </div>
+        </div>
+      </div>
+      {%endfor%} 
+      <div class="mt-3" />
+    </div> 
+     
+  </body>
+</html>

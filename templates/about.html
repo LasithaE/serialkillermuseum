@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang=”en”>
+     <head>
+      <meta charset=”UTF-8">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/about.css') }}">
+      <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+      <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+      <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+      <title>Webscraper in Python using Flask</title>
+     </head>
+     <body>
+         <button type="home" class="btns1"><a href="{{ url_for('index') }}">Home</a></button>
+         <button type="about" class="btns2"><a href="{{ url_for('about') }}">About</a></button>
+       <h2 class="title1">Serial Killer Museum.</h2>
+       <div method="POST" action="{{ url_for('about') }}">
+           <p class="para">
+               During this quarantine , I have been spending a lot of time, reading crime mysteries, listening to true crime podcasts, and watching thriller movies. This has spiked my interest in true crime a lot. Therefore, when I was searching for a project to work with that was beginner friendly and something that I love researching about, this website was the absolute perfect blend I could have done. 
+           </p>
+           <h3 class="thanks">Thanks for dropping by.</h3>
+           <a class="githublink" href="https://github.com/LasithaE"><i  class="fa fa-github fa_custom_github" aria-hidden="true"></i></a>
+           <a class="linkedinlink" href="https://www.linkedin.com/in/lasithae/"><i  class="fa fa-linkedin fa_custom_linkedin" aria-hidden="true"></i></a>
+       </div>  
+     </body>
+    </html>
+    

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html lang=”en”>
+     <head>
+      <meta charset=”UTF-8">
+      <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+      <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+      <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+      <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+      <title>Webscraper in Python using Flask</title>
+     </head>
+     <body>
+      <button type="home" class="btns1"><a href="{{ url_for('index') }}">Home</a></button>
+      <button type="about" class="btns2"><a href="{{ url_for('about') }}">About</a></button>
+       <h1 class="welcome">Welcome to the </h1>
+       <h2 class="title1">Serial Killer Museum.</h2>
+        <form class="form-inline" method="POST" action="{{ url_for('test') }}">
+            <div class="form-group">
+              <div class="input-group">
+                  <span class="input-group-addon">Please select a country :</span>
+                      <select name="country_name" class="selectpicker form-control">
+                        {% for o in countries  %}
+                        <option value="{{ o }}">{{ o }}</option>
+                        {% endfor %}
+                      </select>
+              </div>
+              
+              <a target="_self" href="/test" ></a>
+
+              <button type="submit"  class="btns">Enter.</button>
+              
+            </div>
+          </form>
+     </body>
+    </html>
+    

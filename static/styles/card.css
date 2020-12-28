@@ -1,0 +1,138 @@
+body{
+  background-color: black;
+}
+.card1{
+  padding-top:18vh;
+}
+.btns1{
+  background-color:#bb0a1e;
+  width: 5.7vw;
+  height: 4.2vh;
+  font-family: 'Special Elite', cursive;
+  color: white;
+  text-align: center;
+  font-size:2.5vh;
+  position: absolute;
+  left: 82vw;
+  top:5vh;
+  border-style: solid;
+  border-color:#bb0a1e ;
+  border-radius: 4vh;
+}
+.btns2{
+  background-color:#bb0a1e;
+  width: 5.7vw;
+  height: 4.2vh;
+  font-family: 'Special Elite', cursive;
+  color: white;
+  text-align: center;
+  font-size: 2.5vh;
+  position: absolute;
+  left: 90vw;
+  top:5vh;
+  border-style: solid;
+  border-color:#bb0a1e ;
+  border-radius: 4vh;
+}
+.float-layout {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box; 
+  box-align: center;
+  
+  
+  
+}
+
+.title1{
+  font-family: 'Special Elite', cursive;
+  color:honeydew;
+  margin: auto;
+  margin: auto;
+  position: absolute;
+  left: 36vw;
+  top: 10vh;
+  font-size: 30px;
+  font-weight: 70;
+}
+
+.card-container {
+  overflow: hidden;
+  width: auto;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25vw;
+}
+
+.card {
+  align-self: center;
+  background-color: rgba(220, 220, 220, 0.1);
+  filter: blur(00.05vh);
+  font-family: 'Special Elite', cursive;
+  border-radius: 3vh;
+  color:honeydew;
+  height:40vh; /*replace this it in width: 100%*/
+  width:30vw;
+  top: 20px;
+  float: right;
+  
+}
+
+.card-title {
+  align-self: center;
+  padding: 1.4rem;
+  font-size: 24px;
+  font-family: 'Special Elite', cursive;
+  color:honeydew;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+.card-desc {
+  align-self: center;
+  text-align: left;
+  font-size: 18px;
+  position: relative;
+  display:block;
+  font-family: 'Special Elite', cursive;
+  color:honeydew;
+  padding: 20px;
+}
+
+/*add this it*/
+.card-image {
+  
+  display: flex;
+  float: left;
+}
+/*-------------*/
+
+div.card-image img {
+  height:40vh; /*replace this it in width: 100%*/
+  width:14vw;
+  padding:0.75rem; 
+  border-radius: 3vh;
+}
+.btn-primary{
+  align-content: center;
+  width: 6rem;
+  height:2.4rem;
+  float: right;
+  background-color:#bb0a1e;
+  font-family: 'Special Elite', cursive;
+  color: white;
+  text-align: center;
+  font-size: 2.5vh;
+  border-style: solid;
+  border-color:#bb0a1e ;
+  border-radius: 4vh;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+/* Phone Devices Query */
