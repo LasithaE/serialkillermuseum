@@ -1,5 +1,6 @@
 from flask import Flask, render_template,request, url_for,redirect
 from bs4 import BeautifulSoup as bs
+import os
 import requests
 app = Flask(__name__)
 source = requests.get('https://en.wikipedia.org/wiki/List_of_serial_killers_by_country').text
@@ -67,5 +68,6 @@ def test():
 @app.route("/about" , methods=['GET', 'POST'])
 def about():
     return render_template('about.html')
-if __name__ == "__main__":
-    app.run()
+if __name__ == "__main__":\
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
