@@ -11,12 +11,12 @@ def index():
     td1=soup.find_all('h3')
     countries,k=[],''
     a1=td1[0:85]
+    filters=['United States','Germany','France']
     for i in range(len(a1)):
         k=a1[i]
-        countries.append(k.text)
-    countries.remove('United States')
-    countries.remove('Germany')
-    countries.remove('France')
+        if k.text not in filters:
+            countries.append(k.text)
+    
     
     return render_template('index.html',**locals())
 
